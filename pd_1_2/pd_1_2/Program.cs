@@ -88,6 +88,19 @@ namespace pd_1_2
                     break;
             }
             Console.ReadLine();
+
+            Console.WriteLine("Ievadiet skaitli, ko velaties kapinat!");
+            double b = Aprekins();
+            Console.WriteLine(b);
+            Console.ReadLine();
+        }
+        static double Aprekins()
+        {
+            double sk;
+            string input = Console.ReadLine();
+            sk = Convert.ToDouble(input);
+            double a = sk * sk;
+            return a;
         }
         static string Funkcija(string vards1, string vards2)
         {
