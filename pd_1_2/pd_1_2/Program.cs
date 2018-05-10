@@ -54,7 +54,39 @@ namespace pd_1_2
             }
             Console.ReadLine();
 
+            Console.WriteLine("Ievadiet GPA skaitli un uzziniet savu vertejumu");
+            string ievads = Console.ReadLine();
+            switch (ievads)
+            {
 
+                case "4.5":
+                    Console.WriteLine("A+ - Exceptional");
+                    break;
+                case "4":
+                    Console.WriteLine("A - Excellent");
+                    break;
+                case "3.5":
+                    Console.WriteLine("B+ - Very good");
+                    break;
+                case "3":
+                    Console.WriteLine("B - Good");
+                    break;
+                case "2.5":
+                    Console.WriteLine("C+ - Satisfactory");
+                    break;
+                case "2":
+                    Console.WriteLine("C - Adequate");
+                    break;
+                case "1":
+                    Console.WriteLine("D - Marginal");
+                    break;
+                case "0":
+                    Console.WriteLine("F - Failure");
+                    break;
+                default:
+                    Console.WriteLine("Error! ievadiet pareizu GPA skaitli ar cipariem!");
+                    break;
+            }
             Console.ReadLine();
         }
         static string Funkcija(string vards1, string vards2)
